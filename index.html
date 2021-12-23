@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/128/2995/premium/2995101.png?token=exp=1640266706~hmac=01e4360aa9239562d855c6b1aac967e1" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+   <h1>🎶 Tape Spot 🎶</h1> 
+   <div class="music-container " id="music-container">
+       <div class="music-info">
+           <h4 id="title"></h4>
+           <div class="progress-container" id="progress-container">
+               <div class="progress" id="progress"></div>
+           </div>
+        </div>
+
+        <audio src="music/For You.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="images/foryou.jpg" alt="music-cover" id="cover">
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+   </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
